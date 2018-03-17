@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>travelRomania</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="travel.css">
+</head>
+
+<body class="light-grey content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="sidebar bar-block white animate-left text-grey collapse top center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="padding-64 center"><b>travel<br>ROMANIA</b></h3>
+  <a href="javascript:void(0)" onclick="close()" class="bar-item button padding hide-large">CLOSE</a>
+  <a href="gallery.html" onclick="close()" class="bar-item button">Gallery</a>
+  <a href="about.html" onclick="close()" class="bar-item button">Why Romania?</a>
+  <a href="contact.html" onclick="close()" class="bar-item button">Contact</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large white xlarge padding-16">
+  <span class="left padding">SOME NAME</span>
+  <a href="javascript:void(0)" class="right button white" onclick="open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large animate-opacity" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="hide-large" style="margin-top:83px"></div>
+
+  <!-- Photo grid -->
+  <div class="row">
+    <div class="third">
+      <img src="sfinx.jpg" style="width:100%" onclick="onClick(this)" alt="Sfinx">
+      <img src="sighisoara.jpg" style="width:100%" onclick="onClick(this)" alt="Danube Delta">
+      <img src="Dracula.jpg" style="width:100%" onclick="onClick(this)" alt="Dracula's Castle">
+    </div>
+
+    <div class="third">
+      <img src="centrulvechi.jpg" style="width:100%" onclick="onClick(this)" alt="Bucharest's Old Centre">
+      <img src="constanta.jpg" style="width:100%" onclick="onClick(this)" alt="Constanta - The Bleack Sea">
+      <img src="transfagarasan.jpg" style="width:100%" onclick="onClick(this)" alt="Transfagarasan">
+    </div>
+
+    <div class="third">
+      <img src="parapanta.jpg" style="width:100%" onclick="onClick(this)" alt="Decebal">
+      <img src="danube.jpg" style="width:100%" onclick="onClick(this)" alt="Danube River">
+      <img src="rasnov.jpg" style="width:100%" onclick="onClick(this)" alt="Carpathian Mountains">
+    </div>
+</div>
+
+<div class="row">
+    <div class="third">
+      <img src="mamaia.jpg" style="width:100%" onclick="onClick(this)" alt="Sfinx">
+      <img src="decebal.jpg" style="width:100%" onclick="onClick(this)" alt="Danube Delta">
+      <img src="lac.jpg" style="width:100%" onclick="onClick(this)" alt="Dracula's Castle">
+    </div>
+
+    <div class="third">
+      <img src="ou.jpg" style="width:100%" onclick="onClick(this)" alt="Bucharest's Old Centre">
+      <img src="peisaj.jpg" style="width:100%" onclick="onClick(this)" alt="Constanta - The Bleack Sea">
+      <img src="sighisoara1.jpg" style="width:100%" onclick="onClick(this)" alt="Transfagarasan">
+    </div>
+
+    <div class="third">
+      <img src="parapanta.jpg" style="width:100%" onclick="onClick(this)" alt="Decebal">
+      <img src="danube.jpg" style="width:100%" onclick="onClick(this)" alt="Danube River">
+      <img src="rasnov.jpg" style="width:100%" onclick="onClick(this)" alt="Carpathian Mountains">
+    </div>
+
+  </div>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="button black xlarge display-topright">×</span>
+    <div class="modal-content animate-zoom center transparent padding-64">
+      <img id="img01" class="image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="container dark-grey center text-light-grey padding-32" id="about">
+    <div class="content justify" style="max-width:600px">
+      <h4>Authentic, Natural and Cultural </h4>
+            <p> are the words that best capture the essence of Romania,</p>
+            <p>a dynamic country rich in history, arts and scenic beauty.</p>
+          <h4>  Nature & Wildlife</h4>
+            <p>The Carpathian Mountains draw a wide arc through the centre of the country, leaving a swath of exposed rocky peaks surrounded by groves of pine and deciduous trees, and stretches of bright green meadow below. The harsh geography has limited human habitation, and the woods are filled with deer, elk and bear. Europe's second-longest river, the Danube, marks Romania's southern border with Bulgaria before turning suddenly northward and emptying into the Black Sea. The delta provides sanctuary for 300 species of bird and 160 species of fish. The sprawling marshes account for the largest expanse of reed beds in the world.</p>
+<h4>Castles & Medieval Towns</h4>
+<p>Transylvania, the land that gave us Dracula, has no shortage of jaw-dropping castles pitched precariously on rocky hilltops. There's spooky Bran Castle, of course, with its spurious connection to Bram Stoker’s fictional count, but don’t overlook beauties such as Hunedoara’s 14th-century Corvin Castle or King Carol I’s sumptuous 19th-century pile, Peleş Castle. In medieval towns like Braşov, Sighişoara and Sibiu, cobbled walkways support chic streetside cafes, while a cacophony of sounds emanating from student bars and clubs echo off the Gothic and baroque facades in lively Cluj-Napoca. Transylvania’s Saxon villages boast fortified churches that date back half a millennium.</p>
+
+<h4>Folk Culture</h4>
+<p>For centuries, a highly productive peasant culture thrived in much of Romania. The hilly geography and lack of passable roads necessitated the emergence of hundreds of self-sufficient villages, where old-school crafts such as bread-making, pottery, tanning and weaving were honed to an art. Folk museums, particularly the open-air skansens and village museums, are a must. Many isolated hamlets, where the old folkways are still practised, are museums in themselves. This is most evident in Maramureş, where oversized hay racks, horse carts and stately wooden churches dominate, and towns and villages have seemingly stepped out of the Middle Ages.</p>
+
+<h4>Outdoor Activities</h4>
+<p>The rocky peaks of Transylvania and Moldavia, snow-capped from mid-October in some years, call out for conquering, and well-marked trails lead to summits from all directions. There are less adventurous but no less rewarding walks through woods, meadows and villages in other parts of the country. The Danube Delta is a vast and unique protected wetland and makes a perfect backdrop for fishing, boating and, especially, birdwatching in spring. In summer, from mid-June to early September, the action moves to the Black Sea coast. Beach resorts fill up with swimmers, divers, sunbathers and partiers, who come for the all-night, open-air clubbing marathons.</p>
+  </div>
+</div>
+
+  <!-- Contact section -->
+  <div class="container light-grey padding-32 padding-large" id="contact">
+    <div class="content" style="max-width:600px">
+      <h4 class="center"><b>Contact us</b></h4>
+      <p>Do you want to find out more about Romania?</p>
+      <p>Fill out the form and we will get in touch with you :) </p>
+      <form action="/action_page.php" target="_blank">
+        <div class="section">
+          <label>Name</label>
+          <input class="input border" type="text" name="Name" required>
+        </div>
+        <div class="section">
+          <label>Email</label>
+          <input class="input border" type="text" name="Email" required>
+        </div>
+        <div class="section">
+          <label>Message</label>
+          <input class="input border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="button block black margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container padding-32 grey">
+    <div class="row-padding">
+      <div class="third">
+        <h3>Info</h3>
+        <ul class="ul">
+          <li class="padding-16 hover-black">
+            <p> <a href="https://www.romaniaexperience.com/these-are-the-international-airports-in-romania-with-map/">
+              <img src="plane.jpg" class="left margin-right" style="width:50px"> </p>
+            <span class="large">International Airports in Romania</span><br>
+            <span>Hopefully this map of the Romanian airports will make it easier for those looking to visit the country to get as close to the city they want to see.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="third">
+        <h3>You might also like</h3>
+        <ul class="ul">
+          <li class="padding-16 hover-black">
+            <p><a href="http://www.touropia.com/best-places-to-stay-in-bucharest/">
+              <img src="buc.jpg" class="left margin-right" style="width:50px"> </p>
+            <span class="large">8 Best Places to Stay in Bucharest</span><br>
+          </li>
+          <li class="padding-16 hover-black">
+            <img src="why.jpg" class="left margin-right" style="width:50px">
+            <span class="large">15 Top Tourist Attractions in Romania</span><br>
+          </li>
+        </ul>
+      </div>
+
+      <div class="third">
+        <h3>When to visit</h3>
+        <ul class="ul">
+          <li class="padding-16 hover-black">
+            <p><a href="https://untold.com/en">
+              <img src="untold.jpg" class="left margin-right" style="width:50px"> </p>
+            <span class="large">UNTOLD FESTIVAL 2-5 AUGUST 2018: Cluj-Napoca, Transylvania, Romania</span><br>
+          </li>
+          <li class="padding-16 hover-black">
+            <p><a href="https://www.romania-insider.com/what-do-romanians-celebrate-on-their-december-1st-national-day/">
+            <img src="dec.jpg" class="left margin-right" style="width:50px"> </p>
+            <span class="large">Romanian's National Day</span><br>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End page content -->
+
+// Script to open and close sidebar
+<script>
+
+function open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
