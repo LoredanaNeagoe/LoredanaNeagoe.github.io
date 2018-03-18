@@ -88,7 +88,6 @@
   </div>
 
 
-
   <!-- Modal for full size images on click-->
   <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="button black xlarge display-topright">×</span>
@@ -98,48 +97,6 @@
     </div>
   </div>
 
-  <!-- About section -->
-  <div class="container dark-grey center text-light-grey padding-32" id="about">
-    <div class="content justify" style="max-width:600px">
-      <h4>Authentic, Natural and Cultural </h4>
-            <p> are the words that best capture the essence of Romania,</p>
-            <p>a dynamic country rich in history, arts and scenic beauty.</p>
-          <h4>  Nature & Wildlife</h4>
-            <p>The Carpathian Mountains draw a wide arc through the centre of the country, leaving a swath of exposed rocky peaks surrounded by groves of pine and deciduous trees, and stretches of bright green meadow below. The harsh geography has limited human habitation, and the woods are filled with deer, elk and bear. Europe's second-longest river, the Danube, marks Romania's southern border with Bulgaria before turning suddenly northward and emptying into the Black Sea. The delta provides sanctuary for 300 species of bird and 160 species of fish. The sprawling marshes account for the largest expanse of reed beds in the world.</p>
-<h4>Castles & Medieval Towns</h4>
-<p>Transylvania, the land that gave us Dracula, has no shortage of jaw-dropping castles pitched precariously on rocky hilltops. There's spooky Bran Castle, of course, with its spurious connection to Bram Stoker’s fictional count, but don’t overlook beauties such as Hunedoara’s 14th-century Corvin Castle or King Carol I’s sumptuous 19th-century pile, Peleş Castle. In medieval towns like Braşov, Sighişoara and Sibiu, cobbled walkways support chic streetside cafes, while a cacophony of sounds emanating from student bars and clubs echo off the Gothic and baroque facades in lively Cluj-Napoca. Transylvania’s Saxon villages boast fortified churches that date back half a millennium.</p>
-
-<h4>Folk Culture</h4>
-<p>For centuries, a highly productive peasant culture thrived in much of Romania. The hilly geography and lack of passable roads necessitated the emergence of hundreds of self-sufficient villages, where old-school crafts such as bread-making, pottery, tanning and weaving were honed to an art. Folk museums, particularly the open-air skansens and village museums, are a must. Many isolated hamlets, where the old folkways are still practised, are museums in themselves. This is most evident in Maramureş, where oversized hay racks, horse carts and stately wooden churches dominate, and towns and villages have seemingly stepped out of the Middle Ages.</p>
-
-<h4>Outdoor Activities</h4>
-<p>The rocky peaks of Transylvania and Moldavia, snow-capped from mid-October in some years, call out for conquering, and well-marked trails lead to summits from all directions. There are less adventurous but no less rewarding walks through woods, meadows and villages in other parts of the country. The Danube Delta is a vast and unique protected wetland and makes a perfect backdrop for fishing, boating and, especially, birdwatching in spring. In summer, from mid-June to early September, the action moves to the Black Sea coast. Beach resorts fill up with swimmers, divers, sunbathers and partiers, who come for the all-night, open-air clubbing marathons.</p>
-  </div>
-</div>
-
-  <!-- Contact section -->
-  <div class="container light-grey padding-32 padding-large" id="contact">
-    <div class="content" style="max-width:600px">
-      <h4 class="center"><b>Contact us</b></h4>
-      <p>Do you want to find out more about Romania?</p>
-      <p>Fill out the form and we will get in touch with you :) </p>
-      <form action="/action_page.php" target="_blank">
-        <div class="section">
-          <label>Name</label>
-          <input class="input border" type="text" name="Name" required>
-        </div>
-        <div class="section">
-          <label>Email</label>
-          <input class="input border" type="text" name="Email" required>
-        </div>
-        <div class="section">
-          <label>Message</label>
-          <input class="input border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="button block black margin-bottom">Send Message</button>
-      </form>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer class="container padding-32 grey">
@@ -175,44 +132,41 @@
         <h3>When to visit</h3>
         <ul class="ul">
           <li class="padding-16 hover-black">
-            <p><a href="https://untold.com/en">
-              <img src="untold.jpg" class="left margin-right" style="width:50px"> </p>
+            <p> <img src="untold.jpg" class="left margin-right" style="width:50px"> <a href="https://untold.com/en"> </p>
             <span class="large">UNTOLD FESTIVAL 2-5 AUGUST 2018: Cluj-Napoca, Transylvania, Romania</span><br>
           </li>
           <li class="padding-16 hover-black">
-            <p><a href="https://www.romania-insider.com/what-do-romanians-celebrate-on-their-december-1st-national-day/">
-            <img src="dec.jpg" class="left margin-right" style="width:50px"> </p>
+            <p> <img src="dec.jpg" class="left margin-right" style="width:50px">
+              <a href="https://www.romania-insider.com/what-do-romanians-celebrate-on-their-december-1st-national-day/">
+             </p>
             <span class="large">Romanian's National Day</span><br>
           </li>
         </ul>
       </div>
-
     </div>
   </footer>
   <!-- End page content -->
 
-// Script to open and close sidebar
-<script>
+  // Script to open and close sidebar
+  <script>
 
-function open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
+  function open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
 
-function close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
+  function close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
 </body>
 </html>
